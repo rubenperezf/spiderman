@@ -1,0 +1,295 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Shadows Into Light';
+  background-color: red;
+  font-size: 20px;
+}
+.principal {
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  height: 700px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+
+.presentation {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  animation-name: spiderman;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+
+}
+@keyframes spiderman {
+
+  from {top: -200px;}
+  to {top: -20px;}
+}
+.presentation img {
+  height: 500px;
+}
+@keyframes options {
+  from {left: -500px;}
+  to {left: 10px;}
+  from {top: 0px;}
+  to {top: 150px;}
+}
+nav {
+  width: 50%;
+  position: relative;
+  animation-name: options;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+
+}
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  padding-bottom: 50px;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-left: 50px;
+}
+nav li:hover {
+  background-color: red;
+}
+nav a {
+  color: black;
+}
+.origin-story {
+  background-color: blue;
+  height: 1000px;
+
+}
+.origin-story h2{
+  text-align: center;
+  font-size: 4rem;
+}
+.origin-story .text {
+  margin: 5px;
+  width: 60%;
+  height: 800px;
+  overflow: scroll;
+  float: left;
+
+}
+.text p {
+  font-size: 1.5rem;
+  padding-bottom: 50px;
+  margin: 10px;
+}
+.text h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+.origin-story .table {
+    margin: 0px 50px;
+    float: left;
+    width: 30%;
+}
+table {
+  text-align: center;
+  font-size: 1.5rem;
+  border: 1px solid black;
+}
+
+table th {
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 5px;
+}
+table td {
+  border: 1px solid black;
+  padding: 5px;
+}
+.table p {
+  font-size: 2rem;
+  text-align: center;
+  border: 1px black solid;
+  border-radius: 100%;
+  text-align: center;
+  margin: 50px auto;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  padding: 15px 0px;
+
+}
+.table a {
+  text-decoration: none;
+  color: blue;
+}
+.super-powers {
+  background-color: red;
+  height: 800px;
+  clear: both;
+}
+.super-powers h2  {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 50px;
+}
+.photo-powers {
+  float: left;
+  width: 50%;
+ text-align: center;
+}
+.photo-powers img {
+  width: 30%;
+  height: 80%;
+}
+.list-powers {
+  float: left;
+  width: 50%;
+  font-size: 2em;
+}
+
+.list-powers ul {
+  list-style: none;
+}
+.super-powers p {
+  font-size: 2rem;
+  text-align: center;
+  border: 1px black solid;
+  border-radius: 100%;
+  text-align: center;
+  margin: 50px auto;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  padding: 15px 0px;
+
+}
+.super-powers a {
+  text-decoration: none;
+  color: red;
+}
+
+.contact {
+  background-color: blue;
+  height: 900px;
+}
+header {
+  text-align: center;
+}
+
+
+.contact h2  {
+  font-size: 4em;
+  padding-top: 0px;
+}
+.contact p {
+  font-size: 2rem;
+  text-align: center;
+  border: 1px black solid;
+  border-radius: 100%;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  padding: 15px 0px;
+  color: blue;
+  float: left;
+
+}
+.contact a {
+  text-decoration: none;
+}
+.form-row{
+  display: flex;
+  padding-bottom: 20px;
+  font-size: 2rem;
+  clear: both;
+}
+.form-row input {
+  width: 200px;
+  height: 60px;
+  font-size: 1.5rem;
+  font-family: 'Shadows Into Light';
+}
+.form-row .left {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  width: 50%;
+}
+.form-row .right{
+  width: 50%;
+  padding-left: 10px;
+}
+.form-row textarea {
+  font-size: 1.5rem;
+  font-family: 'Shadows Into Light';
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.submit button {
+  width: 100px;
+  height: 60px;
+  font-size: 2rem;
+  font-family:'Shadows Into Light';
+}
+.contact .go-up{
+  position: relative;
+  bottom: 500px;
+  left: 200px;
+}
+textarea {
+  width: 400px;
+  height: 200px;
+}
+@media only screen and (max-width: 1200px) {
+  .principal {
+    height: 600px;
+  }
+  nav li {
+    font-size: 2rem;
+  }
+  .origin-story {
+    height: 1800px;
+  }
+  .origin-story .text {
+    width: 100%;
+    clear: both;
+  }
+  .origin-story .table {
+    clear: left;
+    width: 100%;
+
+  }
+  textarea {
+    width: 300px;
+    height: 200px;
+  }
+  @media only screen and (max-width: 600px) {
+    .principal {
+      height: 500px;
+    }
+    .principal img {
+      height: 400px;
+    }
+    nav li {
+      font-size: 1.3rem;
+    }
+    .list-powers {
+      font-size: 1.5em;
+    }
+    .contact .go-up {
+      display: none;
+    }
+    textarea {
+      width: 200px;
+      height: 100px;
+    }
